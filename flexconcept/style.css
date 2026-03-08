@@ -1,4 +1,4 @@
-               /* wix  style section start from here*/
+                       /* wix  style section start from here*/
       .wixsection {
         display: flex;
         justify-content: space-around;
@@ -57,6 +57,7 @@
       }
       .wixbuttondiv>p{
         border: 1px solid;
+        border-radius: 8px;
         background-color:#161616 ;
         color: #f6f6f6;
         font-size: 18px;

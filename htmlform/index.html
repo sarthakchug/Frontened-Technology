@@ -46,7 +46,7 @@
         <label for="python">PYTHON</label> <br> <br>
 
         <label for="lang">Select your fav. lang:</label>
-        <select name="Languages" id="lang"m>
+        <select name="Languages" id="lang">
             <option value="" disabled selected>Select your  lang.</option>
             <option value="HTML">HTML</option>
             <option value="CSS">CSS</option>
@@ -56,10 +56,38 @@
         </select><br><br>
 
         <textarea name="ytDesc" id="" rows="2" cols="32" placeholder="Enter your suggestions"></textarea> <br> <br>
+                                                  <!-- form -type  extra attributes -->
+        <label for="">Choose your birth date</label>
+        <input type="date" name="" id="" min="2000-01-01" max="2010-12-31"> <br> <br>
 
-        <input type="button" value="SUMBIT" name="sumbit" id="">
+        <label for="col">Choose your color:</label>
+        <input type="color" id="col" name="usercolor"> <br> <br>
 
-        </fieldset>  
+        <label for=""> Choose your Date&time:</label>
+        <input type="datetime-local" name="" id=""> <br> <br>
+
+        <input type="email" placeholder="Enter your email"> <br> <br>
+        <input type="tel" placeholder="Enter your phone number"> <br> <br>
+        <input type="number" placeholder="number" min="0" max="5"> <br> <br>
+        <label for="">Brightness level: (0-100):</label>
+        <input type="range" min="0" max="100"> <br> <br>
+
+        <!-- <input type="button" value="SUMBIT" name="sumbit" id=""> -->
+         <input type="submit">
+        <input type="reset">
+
+        </fieldset><br>
+
+        <fieldset>
+            <legend>06/03/2026</legend>
+
+                <input list="colors" placeholder="Choose your fav. color">
+                <datalist id="colors">
+                    <option value="red"></option>
+                    <option value="green"></option>
+                    <option value="blue"></option>
+                </datalist>
+        </fieldset>
 
      </form>
     
