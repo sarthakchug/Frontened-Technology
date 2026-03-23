@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position concept</title>
+    <style>
+        .maindiv{
+            display: flex;
+            gap: 20px;
+            border: 1px solid red;
+            padding: 20px;
+            position: relative;
+        }
+                     /* ye bhi kar sakte hai multiple classes ka sth
+        .div1 , .div2 , .div3 , .div4 {
+             width: 150px;
+             height: 150px;
+             border: 1px solid;
+        } */
+        .basiccss{
+            width: 150px;
+            height: 150px;
+        }
+        .border{
+            border: 1px solid;
+        }
+        .div1{
+            background-color: yellow;
+        }
+        .div2{
+           background-color: blue;
+        }
+        .div3{
+           background-color: purple;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           position: absolute;
+           left: 89%;
+           top: 289%;
+        }
+        .div4{
+            background-color: darkcyan;
+        }
+        .innerdiv3{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+
+        }
+    </style>
+</head>
+<body>
+                    <!-- position:static(default)
+                    position:relative (position nbi xhodta)                # properties:- top,bottom,left,right
+                    position:fixed(position xhodta ha or vahiu fixed)
+                    position:sticky(scroll ka sath move phr sticky)
+                    position:absolute( ye to apne parent ka sath kaam karaga -relative k sth) -->
+
+    <div class="maindiv">
+        <div class="div1 basiccss border"></div>
+        <div class="div2 basiccss border"></div>
+        <div class="div3 basiccss border">
+            <div class="innerdiv3"></div>
+        </div>
+        <div class="div4 basiccss border"></div>
+    </div>
+</body>
+</html>
